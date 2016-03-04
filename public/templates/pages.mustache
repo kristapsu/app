@@ -1,0 +1,13 @@
+{{#data}}
+  <section class="article clearfix">
+    <h2 class="article-header"><a href="#page/{{id}}">{{title}}</a></h2>
+    <img class="article-image fluid-image" src="{{image}}" alt="{{title}}" />
+    <p class="article-paragraph">{{content}}</p>
+  </section>
+{{/data}}
+
+
+<!-- if there is no data, do this -->
+{{^data}}
+  No pages :()
+{{/data}}

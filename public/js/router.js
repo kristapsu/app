@@ -4,6 +4,7 @@ function ($, _, Backbone, DefaultView) {
     routes: {
       'about': 'aboutAction',
       'contact': 'contactAction',
+      'page/:id': 'pageAction',
       '*other': 'defaultAction'
     }
   });
