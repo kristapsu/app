@@ -1,9 +1,10 @@
-define(['jquery', 'underscore', 'backbone', 'views/default', 'views/page'],
-function ($, _, Backbone, DefaultView, PageView) {
+define(['jquery', 'underscore', 'backbone', 'views/default', 'views/page', 'views/form'],
+function ($, _, Backbone, DefaultView, PageView, FormView) {
   var SiteRouter = Backbone.Router.extend({
     routes: {
       'about': 'aboutAction',
       'contact': 'contactAction',
+      'form': 'formAction',
       'page/:id': 'pageAction',
       '*other': 'defaultAction'
     }
@@ -23,6 +24,9 @@ function ($, _, Backbone, DefaultView, PageView) {
     siteRouter.on('route:pageAction', function(id){
       var pageView = new PageView(id);
       //pageView.render();
+    });
+    siteRouter.on('route:formAction', function(){
+      var formView = new FormView();
     });
     Backbone.history.start();
   };

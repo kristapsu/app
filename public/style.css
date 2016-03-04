@@ -31,12 +31,16 @@
   display: inline-block;
 }
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*** ARTICLE ***/
 
 .article {
   position: relative;
   width: 100%;
-  float: left;
   padding: 20px;
 }
 
@@ -71,7 +75,6 @@
 
   .article {
     width: 50%;
-    float: left;
   }
 
   .article-header {
