@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'mustache', '/js/collections/pages.js', 'text!/templates/page.mustache'], function ($, _, Backbone, Mustache, PagesCollection, pagesTemplate) {
+define(['jquery', 'underscore', 'backbone', 'mustache', '/js/collections/pages.js', 'text!/templates/pages.mustache'], function ($, _, Backbone, Mustache, PagesCollection, pagesTemplate) {
   var DefaultView = Backbone.View.extend({
     el: $('.main'),
     collection: {},
